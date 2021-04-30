@@ -8,7 +8,7 @@
 
 ```Visualização```
 
-[![Venda de arma por NPC](http://img.youtube.com/vi/5e1nrkyeLRk/0.jpg)](http://www.youtube.com/watch?v=5e1nrkyeLRk "Preview ")
+[![Inv](http://img.youtube.com/vi/OSLJkGCafEo/0.jpg)](http://www.youtube.com/watch?v=OSLJkGCafEo "Balaka")
 
 
 ```Instalação```
