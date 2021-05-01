@@ -294,26 +294,6 @@ Citizen.CreateThread(function()
 	end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
--- CHECK PNEU
------------------------------------------------------------------------------------------------------------------------------------------
-function emP.checkLock()
-    local source = source
-    local user_id = vRP.getUserId(source)
-    local identity = vRP.getUserIdentity(user_id)
-    local vehicle,vehNet = vRPclient.vehList(source,5)
-    if not vRPclient.inVehicle(source) then
-        if user_id then
-            if vRP.getInventoryItemAmount(user_id,"lockpick") >= 1 then
-                vRP.tryGetInventoryItem(user_id,"lockpick",1)
-                return true 
-            else
-                TriggerClientEvent("Notify",source,"negado","Você não possui um <b>Pneu</b>.") 
-                return false
-            end
-        end
-    end
-end
------------------------------------------------------------------------------------------------------------------------------------------
 --[ USE ITEM ]---------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------
 local pick = {}
