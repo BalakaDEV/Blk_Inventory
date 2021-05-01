@@ -776,7 +776,7 @@ function vRPN.useItem(itemName,type,ramount)
 
 					actived[user_id] = true
 					TriggerClientEvent('vrp_inventario:Update',source,'updateMochila')
-					vRPclient._CarregarObjeto(src,"mp_player_inteat@burger","mp_player_int_eat_burger","prop_cs_burger_01",49,60309)
+					vRPclient._CarregarObjeto(src,"mp_player_inteat@burger","mp_player_int_eat_burger","prop_cs_burger_01",49,28422)
 					TriggerClientEvent("progress",source,10000,"comendo")
 
 					SetTimeout(10000,function()
