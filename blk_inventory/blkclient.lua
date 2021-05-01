@@ -73,53 +73,6 @@ AddEventHandler('cloneplates',function()
         end
     end
 end)
------------------------------------------------------------------------------------------------------------------------------------------
--- REPAIRTIRES
------------------------------------------------------------------------------------------------------------------------------------------
-RegisterCommand("pneu",function(source,args) 
-    source = source 
-    local ped = PlayerPedId()
-    local currentPos = GetEntityCoords(ped)
-    local vehicle = vRP.getNearestVehicle(3) 
-    if IsPedInAnyVehicle(PlayerPedId(), false) then
-        TriggerEvent("Notify","negado","Você não pode trocar o pneu dentro de um <b>veículo</b>.")
-        vehicle = false 
-    end        
-        if vehicle then
-            animacao = false 
-            Desabilitar()
-            animacao = true 
-            vRP._playAnim(false,{{"anim@amb@clubhouse@tutorial@bkr_tut_ig3@","machinic_loop_mechandplayer"}},true)
-            TriggerEvent("progress",10000,"Trocando Pneu")
-            Wait(10000)
-            SetVehicleTyreFixed(vehicle,0,0)
-            SetVehicleTyreFixed(vehicle,1,1)
-            SetVehicleTyreFixed(vehicle,2,2)
-            SetVehicleTyreFixed(vehicle,3,3)
-            SetVehicleTyreFixed(vehicle,4,4)
-            SetVehicleTyreFixed(vehicle,5,5)
-            SetTimeout(10000,function()
-                vRP._stopAnim(source,false)
-            end)
-            animacao = false 
-        else
-        TriggerEvent("Notify","negado","Você precisa estar próximo de um <b>veículo</b>.")
-        end  
-    --end    
-end)
-
-function Desabilitar()
-    Citizen.CreateThread(function()
-        while true do
-            Citizen.Wait(1)
-            if animacao then
-                BlockWeaponWheelThisFrame()
-                DisableControlAction(0,167,true)
-                DisableControlAction(0,169,true)
-            end     
-        end
-    end)
-end
 --[ VEHICLEANCHOR ]----------------------------------------------------------------------------------------------------------------------
 
 RegisterNetEvent('vehicleanchor')
