@@ -89,7 +89,7 @@ RegisterNUICallback("droparItem",function(data)
     if IsPedInAnyVehicle(ped) then
         TriggerEvent("Notify","negado","Você não pode dropar itens quando estiver em um veículo.")
     else
-        vRPNserver.dropItem(data.item,data.type,data.amount)
+        vRPNserver.dropItem(data.item,data.amount)
     end
 end)
 
