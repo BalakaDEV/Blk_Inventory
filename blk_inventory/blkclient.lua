@@ -96,7 +96,7 @@ end)
 --[ SENDITEM ]---------------------------------------------------------------------------------------------------------------------------
 
 RegisterNUICallback("enviarItem",function(data)
-	vRPNserver.sendItem(data.item,data.type,data.amount)
+	vRPNserver.sendItem(data.item,data.amount)
 end)
 
 --[ USEITEM ]----------------------------------------------------------------------------------------------------------------------------
