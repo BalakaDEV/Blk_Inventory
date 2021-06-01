@@ -1,3 +1,4 @@
+## <img src="https://media.discordapp.net/attachments/799515684278632468/849132256241254420/Estamos_fechados..png" width="700px">
 # Blk_Inventory
 ```Apresentação```
 - Fivem
