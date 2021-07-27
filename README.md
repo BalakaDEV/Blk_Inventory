@@ -22,3 +22,5 @@
 
 ```Special Thanks```
 - Guilherme "Balaka"
+
+© 2021 Guilherme Balaka All Rights Reserved
